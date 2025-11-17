@@ -1,0 +1,75 @@
+/* Extra styling only for Help Desk page */
+
+.help-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.help-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.help-form,
+.help-id-box {
+  background-color: #ffe3f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.help-form h3,
+.help-id-box h3 {
+  margin-top: 0;
+  color: #4b1b2b;
+}
+
+.help-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4b1b2b;
+}
+
+.help-form input[type="text"],
+.help-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.help-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.help-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4b1b2b;
+}
+
+.help-id {
+  font-weight: bold;
+  color: #680700;
+}
+
+/* small screen tweak */
+
+@media (max-width: 768px) {
+  .help-layout {
+    gap: 16px;
+  }
+}

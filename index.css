@@ -1,0 +1,335 @@
+body {
+
+font-family: Arial, sans-serif;
+
+margin: 0;
+
+padding: 0;
+
+scroll-behavior: smooth;
+
+}
+
+/* Header with brown gradient */
+
+header {
+
+background: linear-gradient(135deg, #673400, #964B00, #B5651D);
+
+color: white;
+
+padding: 20px;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+}
+
+/* New: inner flex container so logo left, nav right */
+
+.header-inner {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+}
+
+/* New: logo + title block */
+
+.logo-title {
+
+display: flex;
+
+align-items: center;
+
+gap: 10px;
+
+}
+
+/* New: circular logo with border */
+
+.logo {
+
+height: 120px;
+
+width: 120px;
+
+border-radius: 50%;
+
+border: 2px solid #ffffff;
+
+object-fit: cover;
+
+}
+
+/* Heading text next to logo */
+
+header h1 {
+
+margin: 0;
+
+font-size: 36px;
+
+}
+
+/* Navigation */
+
+nav {
+
+background-color: transparent;  /* let header gradient show */
+
+text-align: right;
+
+padding: 10px 0;
+
+}
+
+nav a {
+
+color: white;
+
+text-decoration: none;
+
+margin: 0 15px;
+
+font-weight: bold;
+
+transition: 0.3s;
+
+padding: 4px 8px;   /* for active/hover box */
+
+}
+
+/* Active + hover: white text, darker background */
+
+nav a:hover,
+
+nav a.active {
+
+color: #ffffff;            /* keep text white */
+
+background-color: #3b0000; /* darker maroon so it stands out */
+
+border-radius: 4px;
+
+}
+
+/* Remove browser blue focus outline */
+
+nav a:focus,
+
+nav a:active {
+
+outline: none;
+
+}
+
+
+
+.banner {
+
+background-image: url('https://slidescorner.com/wp-content/uploads/2024/02/Aesthetic-Music-PPT-Background-Google-Slides-Wallpaper-by-SlidesCorner.com_.jpg');
+
+background-size: cover;
+
+background-position: center;
+
+color: #630108;
+
+text-align: center;
+
+padding: 100px 20px;
+
+}
+
+.banner h1 {
+
+font-size: 48px;
+
+margin: 0;
+
+text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+}
+
+.section {
+
+padding: 40px 20px;
+
+text-align: center;
+
+}
+
+.books {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: center;
+
+gap: 20px;
+
+}
+
+.book {
+
+border: 1px solid #ddd;
+
+padding: 15px;
+
+width: 200px;
+
+text-align: left;
+
+transition: transform 0.3s, box-shadow 0.3s;
+
+cursor: pointer;
+
+}
+
+.book:hover {
+
+transform: translateY(-5px);
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.book img {
+
+width: 100%;
+
+height: auto;
+
+border-radius: 4px;
+
+}
+
+.book h3 {
+
+font-size: 18px;
+
+margin: 10px 0 5px;
+
+}
+
+.book p {
+
+margin: 5px 0;
+
+font-size: 14px;
+
+}
+
+button {
+
+background-color: #680700;
+
+color: white;
+
+border: none;
+
+padding: 10px 15px;
+
+cursor: pointer;
+
+margin-top: 10px;
+
+transition: 0.3s;
+
+}
+
+button:hover {
+
+background-color: #630108;
+
+}
+
+footer {
+
+background-color: #f1f1f1;
+
+text-align: center;
+
+padding: 20px;
+
+color: #333;
+
+margin-top: 40px;
+
+}
+
+/* Modal */
+
+.modal {
+
+display: none;
+
+position: fixed;
+
+z-index: 2000;
+
+left: 0;
+
+top: 0;
+
+width: 100%;
+
+height: 100%;
+
+overflow: auto;
+
+background-color: rgba(0,0,0,0.5);
+
+}
+
+.modal-content {
+
+background-color: #fff;
+
+margin: 15% auto;
+
+padding: 20px;
+
+border: 1px solid #888;
+
+width: 80%;
+
+max-width: 500px;
+
+position: relative;
+
+}
+
+.close {
+
+color: #aaa;
+
+position: absolute;
+
+top: 10px;
+
+right: 20px;
+
+font-size: 28px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+}
+
+.close:hover,
+
+.close:focus {
+
+color: #000;
+
+}

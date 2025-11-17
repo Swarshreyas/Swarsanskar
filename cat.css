@@ -1,0 +1,88 @@
+/* Whole page background */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #673400, #964B00, #B5651D); /* brown gradient */
+  color: #ffe9c4;
+}
+
+/* Section that holds everything */
+
+.courses-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px 40px;
+}
+
+/* Title styling */
+
+.courses-title {
+  font-size: 36px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.courses-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #ffd27f, #ff9f43);
+}
+
+/* Wrapper for cards */
+
+.courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Individual course card */
+
+.course-card {
+  background-color: whitesmoke; 
+  border-radius: 16px;
+  padding: 24px 28px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Card heading + list */
+
+.course-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #4b1b2b;
+}
+
+.course-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b1b2b;
+}
+
+/* Small responsive tweak for narrow screens */
+
+@media (max-width: 900px) {
+  .courses-section {
+    padding-top: 40px;
+  }
+
+  .courses-wrapper {
+    gap: 20px;
+  }
+
+  .course-card {
+    width: 260px;
+  }
+}
